@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import classes from './Cart.module.css'
-import Modal, { Backdrop, ModalOverlay } from '../UI/Modal'
+import Modal from '../UI/Modal'
 import CartContext from '../../store/cart-context'
 import CartItem from './CartItem'
 import Checkout from './Checkout'
@@ -82,8 +82,7 @@ export default function Cart(props) {
 
     return (
         <>
-            {/* <Backdrop/>
-    <ModalOverlay> */}
+    
     
 
             <Modal onClick={props.onClick}>
